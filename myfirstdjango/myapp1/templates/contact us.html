@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block mycontent %}
+    <h1>
+        contact
+        <form method="post" action="/form-process">
+            {% csrf_token %}
+            number 1 : <input type="text" name="txt1" placeholder="Enter no.1"
+             required/>
+            number 2 : <input type="text" name="txt1" placeholder="Enter no.2"
+             required/>
+             <input type="submit"/>
+        </form>
+    </h1>
+ {% endblock %}
